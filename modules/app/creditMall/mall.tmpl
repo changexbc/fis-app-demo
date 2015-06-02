@@ -1,0 +1,18 @@
+<% _.each(mall, function(item) {%>
+    <li class="mall-item">
+        <div class="mall-item__content">
+            <span class="mall-item__pic lazy-box"><img class="lazyload" data-lazy=<%= item.img %> alt=""></span>
+            <span class="mall-item__price">
+                <div class="text">
+                    <em>学分</em>
+                    <span class="price-num">1</span>
+                    <span class="price-num">?</span>
+                    <span class="price-num">2</span>
+                    <span class="price-num">?</span>
+                </div>
+                <img src="/static/view/img/price.png" alt="">
+            </span>
+            <a class="mall-item__convert" data-modal='#modal-becoming' data-modal-width="100%">立即兑换</a>
+        </div>
+    </li>
+<%});%>

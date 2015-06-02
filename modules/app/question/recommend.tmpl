@@ -1,0 +1,20 @@
+<% _.each(recommend, function(item) {%>
+    <section class="cards question-item">
+            <span class="question-item__avatar"><img src=<%= item.avatar %> alt=""></span>
+            <div class="question-item__content">
+                <div class="question-item__user">
+                    <span class="question-item__name"><%= item.name %></span>
+                    <span class="question-item__tag"><%= item.tag %></span>
+                </div>
+                <p class="question-item__text"><%= item.question %></p>
+
+                <div class="question-item__info">
+                    <div class="question-item__number">
+                        <span class="number-item"><i class="hand-icon hand-icon-comment"></i><em><%= item.commentNum %></em></span>
+                        <span class="number-item"><i class="hand-icon hand-icon-zan"></i><em><%= item.likeNum %></em></span>
+                    </div>
+                    <i class="hand-icon hand-icon-next"></i>
+                </div>
+            </div>
+    </section>
+<%});%>

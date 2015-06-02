@@ -1,0 +1,15 @@
+<% _.each(answers, function(item) {%>
+    <section class="good-item">
+        <span class="good-item__rank"><div class="top-img"></div></span>
+        <h1 class="good-item__title"><%= item.title %></h1>
+
+        <div class="good-item__content">
+            <span class="good-item__best">最佳回答</span>
+            <p class="good-item__text"><%= item.content %></p>
+            <div class="good-item__like">
+                <span class="like-item"><i class="hand-icon hand-icon-zan"></i>赞</span>
+                <span class="like-item"><i class="hand-icon hand-icon-zan rotate"></i>踩</span>
+            </div>
+        </div>
+    </section>
+<%});%>

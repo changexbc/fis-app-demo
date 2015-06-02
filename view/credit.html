@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Document</title>
+    <script type="text/javascript" src="lib/mod.js"></script>
+    <script type="text/javascript" src="lib/zepto.js"></script>
+    <script type="text/javascript" src="lib/fastclick.js"></script>
+    <link rel="stylesheet" href="./css/common.scss">
+    <link rel="stylesheet" href="./css/index.scss">
+</head>
+<body>
+    <header class="task">
+        <div class="js_task-loading loading"><span class="loading__icon"></span></div>
+        <div class="js_task-box task-box"></div>
+    </header>
+    <div class="credit">
+        <div class="cards">
+            <h1 class="credit-title"><div>学分详情</div><div class="js_credit-score">共计1430学分</div></h1>
+            <section class="credit-item">
+                <span class="credit-item__logo purple"><i class="hand-icon hand-icon-notice"></i></span>
+                <div class="credit-item__intro">
+                    <span class="credit-item__title">累积提问</span>
+                    <span class="credit-item__score">＋ 5学分</span>
+                </div>
+            </section>
+            <section class="credit-item">
+                <span class="credit-item__logo yellow"><i class="hand-icon hand-icon-share"></i></span>
+                <div class="credit-item__intro">
+                    <span class="credit-item__title">每日提问</span>
+                    <span class="credit-item__score">＋ 5学分</span>
+                </div>
+            </section>
+            <section class="credit-item">
+                <span class="credit-item__logo blue"><i class="hand-icon hand-icon-answer"></i></span>
+                <div class="credit-item__intro">
+                    <span class="credit-item__title">每日提问</span>
+                    <span class="credit-item__score">＋ 5学分</span>
+                </div>
+            </section>
+            <section class="credit-item">
+                <span class="credit-item__logo orange"><i class="hand-icon hand-icon-recommend"></i></span>
+                <div class="credit-item__intro">
+                    <span class="credit-item__title">每日提问</span>
+                    <span class="credit-item__score">＋ 5学分</span>
+                </div>
+            </section>
+            <section class="credit-item">
+                <span class="credit-item__logo pink"><i class="hand-icon hand-icon-gift"></i></span>
+                <div class="credit-item__intro">
+                    <span class="credit-item__title">每日提问</span>
+                    <span class="credit-item__score">＋ 5学分</span>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        window.taskjson = {
+            "ask":{
+                "num":4,
+                "finish":3
+            },
+            "answer":{
+                "num":1,
+                "finish":1
+            },
+            "share":{
+                "num":3,
+                "finish":3
+            },
+            "recommend":{
+                "num":8,
+                "finish":3
+            }
+        }
+    </script>
+    <script>
+        require('app/credit/credit')
+    </script>
+</body>
+</html>

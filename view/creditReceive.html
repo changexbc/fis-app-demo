@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Document</title>
+    <script type="text/javascript" src="lib/mod.js"></script>
+    <script type="text/javascript" src="lib/zepto.js"></script>
+    <script type="text/javascript" src="lib/fastclick.js"></script>
+    <link rel="stylesheet" data-single='true' href="css/common.scss">
+    <link rel="stylesheet" href="css/index.scss">
+</head>
+<body class="receive">
+    <header class="receive-banner">
+        <img width="100%" src="img/creditget.png" alt="">
+    </header>
+
+    <div class="receive-main">
+        <seciton class="receive-form-item"><input class="receive-input" type="num" placeholder="请输入您的手机号"></seciton>
+        <section class="receive-form-item">
+            <input class="receive-input" type="num" placeholder="请输入验证码">
+            <span class="receive-verify-code js_get-verify-code">获取验证码</span>
+        </section>
+
+        <div class="receive-now">立即领取</div>
+
+        <div class="receive-active">
+            <div class="receive-active__content">
+                <div class="receive-active__content-top">
+                    <h1 class="receive-active__title">活动详情</h1>
+                    <p class="receive-active__text">邀请好友，注册下载，即可获得学分，(学分可以获购商品)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        require('app/creditReceive/creditReceive')
+    </script>
+</body>
+</html>

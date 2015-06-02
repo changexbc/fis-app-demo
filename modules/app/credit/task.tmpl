@@ -1,0 +1,80 @@
+<section class="task-item">
+    <div class="task-content">
+        <div class="task-title">
+            <span class="task-title__text">今日提问</span><em class="task-title__number"><%=ask.num%></em>
+        </div>
+        <% if(ask.finish == ask.num) {%>
+        <span class="task-btn finish">已完成</span>
+        <% } else {%>
+        <span class="task-btn">提问</span>
+        <% } %>
+    </div>
+    <div class="task-progress">
+        <div class="task-progress__bar"><div class="task-progress__bar-inner" style="width: <%= ask.finish / ask.num * 100 %>%"></div></div>
+        <% if(ask.finish == ask.num) {%>
+        <span class="task-progress__text finish">已完成</span>
+        <% } else {%>
+        <span class="task-progress__text"><%= 100* (1  - ask.finish / ask.num) %>%未完成</span>
+        <% } %>
+    </div>
+</section>
+<section class="task-item">
+    <div class="task-content">
+        <div class="task-title">
+            <span class="task-title__text">今日回答</span><em class="task-title__number"><%=answer.num%></em>
+        </div>
+        <% if(answer.finish == answer.num) {%>
+        <span class="task-btn finish">已完成</span>
+        <% } else {%>
+        <span class="task-btn">回答</span>
+        <% } %>
+    </div>
+    <div class="task-progress">
+        <div class="task-progress__bar"><div class="task-progress__bar-inner" style="width: <%= answer.finish / answer.num * 100 %>%"></div></div>
+        <% if(answer.finish == answer.num) {%>
+        <span class="task-progress__text finish">已完成</span>
+        <% } else {%>
+        <span class="task-progress__text"><%= 100* (1  - answer.finish / answer.num) %>%未完成</span>
+        <% } %>
+    </div>
+</section>
+<section class="task-item">
+    <div class="task-content">
+        <div class="task-title">
+            <span class="task-title__text">今日分享</span><em class="task-title__number"><%=share.num%></em>
+        </div>
+        <% if(share.finish == share.num) {%>
+        <span class="task-btn finish">已完成</span>
+        <% } else {%>
+        <span class="task-btn">回答</span>
+        <% } %>
+    </div>
+    <div class="task-progress">
+        <div class="task-progress__bar"><div class="task-progress__bar-inner" style="width: <%= share.finish / share.num * 100 %>%"></div></div>
+        <% if(share.finish == share.num) {%>
+        <span class="task-progress__text finish">今日已分享</span>
+        <% } else {%>
+        <span class="task-progress__text"><%= 100* (1  - share.finish / share.num) %>%未完成</span>
+        <% } %>
+    </div>
+</section>
+<section class="task-item">
+    <div class="task-content">
+        <div class="task-title">
+            <span class="task-title__text">推荐好友</span><em class="task-title__number"><%=recommend.num%></em>
+        </div>
+        <% if(recommend.finish == recommend.num) {%>
+        <span class="task-btn finish">已完成</span>
+        <% } else {%>
+        <span class="task-btn">推荐</span>
+        <% } %>
+    </div>
+    <div class="task-progress">
+        <div class="task-progress__bar"><div class="task-progress__bar-inner" style="width: <%= recommend.finish / recommend.num * 100 %>%"></div></div>
+        <% if(recommend.finish == recommend.num) {%>
+        <span class="task-progress__text finish">已完成</span>
+        <% } else {%>
+        <span class="task-progress__text"><%= 100* (1  - recommend.finish / recommend.num) %>%未完成</span>
+        <% } %>
+    </div>
+</section>

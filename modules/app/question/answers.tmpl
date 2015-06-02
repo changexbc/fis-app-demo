@@ -1,0 +1,15 @@
+<% _.each(answers, function(item) {%>
+    <li class="answer__item">
+        <span class="answer__avatar"><img src=<%= item.avatar %> alt=""></span>
+        <div class="answer__info">
+            <div class="answer__name">
+                <span class="name"><%= item.name %></span>
+                <div class="zan">
+                    <i class="hand-icon hand-icon-zan"></i>
+                    <span class="num"><%= item.likeNum %></span>
+                </div>
+            </div>
+            <p class="answer__content"><%= item.answer %></p>
+        </div>
+    </li>
+<%});%>

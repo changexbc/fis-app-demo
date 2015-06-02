@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="question-html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Document</title>
+    <script type="text/javascript" src="lib/mod.js"></script>
+    <script type="text/javascript" src="lib/zepto.js"></script>
+    <script type="text/javascript" src="lib/fastclick.js"></script>
+    <link rel="stylesheet" href="./css/common.scss">
+    <link rel="stylesheet" href="./css/index.scss">
+</head>
+<body>
+    <div class="question-wrap">
+        <article class="download-app">
+            <i class="download-app__logo hand-icon hand-icon-logo"></i>
+            <div class="download-app__text">
+                <p>我问你</p>
+                <p>校外不懂问百度，校内不懂我问你</p>
+            </div>
+            <a class="download-app__btn">下载APP</a>
+        </article>
+
+        <div class="hand-question">
+
+            <div class="js_question-loading loading"><span class="loading__icon"></span></div>
+
+            <div class="hand-question-content">
+                <section class="cards js_question-box" data-modal='#modal-answers' data-maskclose='0'>
+
+                </section>
+                <h1 class="question-title red">
+                    <span>热门回答</span>
+                </h1>
+                <section class="cards">
+                    <ul class="answer js_answers-box">
+
+                    </ul>
+                </section>
+
+                <section class="cards transparent">
+                    <h1 class="answer-go-btn">发表我的观点</h1>
+                    <a href="" class="mall-link"><img src="img/img_answer.png" alt=""></a>
+                </section>
+
+                <h1 class="question-title red">
+                    <span>推荐问题</span>
+                </h1>
+
+                <div class="question-list js_recommend-box">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reply">
+        <textarea class="reply-content placeholder" data-placeholder="记录回答...">记录回答...</textarea>
+        <span class="reply-submit"><input type="submit" class="submit" value="提交"></span>
+        <span class="reply-close js_reply-close">×</span>
+    </div>
+
+    <div class="pop-modal" id="modal-answers">
+        <div class="pop-modal__mask"></div>
+        <div class="pop-modal__main">
+            <div class="pop-modal__head">
+                获得学分
+                <div class="pop-modal__close" data-modal-close>×</div>
+            </div>
+            <div class="pop-modal__content pop-answers">
+                <div class="pop-answers__text">
+                    下载app做回答，即可获得海量<a style="color:#42a0ea">学分</a>，我是不会告诉你学分可以<a style="color:#42a0ea">兑换商品</a>滴～
+                </div>
+                <div class="pop-answers__btn">
+                    <span class="reply-btn js_reply-show" data-modal-close>直接回复</span>
+                    <span class="download-btn">果断下载</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.questionjson = {
+            "question":{
+                "commentNum":10,
+                "name":"周杰伦",
+                "avatar":"/static/view/img/img_answer.png",
+                "tag":"唱歌，跳舞",
+                "title":"hahah笑死我了",
+                "question":"答案答案hahah笑死我了hahah笑死我了hahah笑死我了简直就是个笑话哈哈啊哈",
+                "pic":"/static/view/img/img_answer.png"
+            },
+            "answers":[
+                {
+                    "likeNum":1,
+                    "name":"aaa",
+                    "avatar":"/static/view/img/img_answer.png",
+                    "answer":"笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb",
+                },
+                {
+                    "likeNum":12,
+                    "name":"bbb",
+                    "avatar":"/static/view/img/img_answer.png",
+                    "answer":"笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb",
+                },
+                {
+                    "likeNum":122,
+                    "name":"ccc",
+                    "avatar":"/static/view/img/img_answer.png",
+                    "answer":"笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb",
+                },
+                {
+                    "likeNum":11,
+                    "name":"ddd",
+                    "avatar":"/static/view/img/img_answer.png",
+                    "answer":"笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb笑个jb",
+                }
+            ],
+            "recommend":[
+                {
+                    "commentNum":100,
+                    "likeNum":12,
+                    "tag":"唱歌，跳舞",
+                    "name":"aaa",
+                    "avatar":"/static/view/img/img_answer.png",
+                    "question":"答案答案hahah笑死我了hahah笑死我了hahah笑死我了简直就是个笑话哈哈啊哈"
+                },
+                {
+                    "commentNum":111,
+                    "likeNum":5,
+                    "tag":"唱歌，跳舞",
+                    "name":"aaa",
+                    "avatar":"/static/view/img/img_answer.png",
+                    "question":"答案答案hahah笑死我了hahah笑死我了hahah笑死我了简直就是个笑话哈哈啊哈"
+                },
+                {
+                    "commentNum":123,
+                    "likeNum":44,
+                    "tag":"唱歌，跳舞",
+                    "name":"aaa",
+                    "avatar":"/static/view/img/img_answer.png",
+                    "question":"答案答案hahah笑死我了hahah笑死我了hahah笑死我了简直就是个笑话哈哈啊哈"
+                },
+                {
+                    "commentNum":2,
+                    "likeNum":3,
+                    "tag":"唱歌，跳舞",
+                    "name":"aaa",
+                    "avatar":"/static/view/img/img_answer.png",
+                    "question":"答案答案hahah笑死我了hahah笑死我了hahah笑死我了简直就是个笑话哈哈啊哈"
+                }
+            ],
+        }
+    </script>
+
+    <script>
+        require('app/question/question')
+    </script>
+</body>
+</html>

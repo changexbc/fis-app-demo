@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Document</title>
+    <script type="text/javascript" src="lib/mod.js"></script>
+    <script type="text/javascript" src="lib/zepto.js"></script>
+    <script type="text/javascript" src="lib/fastclick.js"></script>
+    <link rel="stylesheet" href="./css/common.scss">
+    <link rel="stylesheet" href="./css/index.scss">
+</head>
+<body>
+    <div class="mall">
+        <div class="mall-banner"><img width="100%" src="img/mall-top.png" alt=""></div>
+        <div class="mall-main">
+            <h1 class="mall-score">总学分:1982</h1>
+
+            <div class="js_mall-loading loading"><span class="loading__icon"></span></div>
+            <ul class="js_mall-box mall-list">
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="pop-modal" id="modal-becoming">
+        <div class="pop-modal__mask"></div>
+        <div class="pop-modal__main">
+            <img width="100%" src="img/bag.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        window.malljson = [
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+            {
+                "img":"/static/view/img/bg_introduction.png"
+            },
+        ]
+    </script>
+
+    <script>
+        require('app/creditMall/creditMall')
+    </script>
+</body>
+</html>

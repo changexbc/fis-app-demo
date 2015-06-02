@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@import "/view/css/sass/variables";
+@import "/view/css/sass/extends";
+@import "/view/css/sass/mixins";
+
+//
+// pop-modal
+// --------------------------------------------------
+
+.lazyload{
+    opacity:1;
+    transition:opacity ease .3s;
+}
+.lazy-box{
+    &:after{
+        @extend %loading__icon;
+        width:14px;
+        height:14px;
+        margin:-7px 0 0 -7px;
+        border-right-color:#D42B24;
+        border-bottom-color:#D42B24;
+        content:'';
+    }
+    .lazyload{
+        opacity:0;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Document</title>
+    <script type="text/javascript" src="lib/mod.js"></script>
+    <script type="text/javascript" src="lib/zepto.js"></script>
+    <script type="text/javascript" src="lib/fastclick.js"></script>
+    <link rel="stylesheet" data-single='true' href="./css/common.scss">
+    <link rel="stylesheet" href="./css/index.scss">
+</head>
+<body>
+    <header class="info-user">
+        <span class="info-avatar"><img src="img/bg.jpg" alt=""></span>
+    </header>
+    <div class="info-main">
+        <div class="info-sex info-item">
+            <span class="info-sex__item js_sex-set">
+                <i class="hand-icon hand-icon-male"></i>
+                男
+            </span>
+            <span class="info-sex__item active js_sex-set">
+                <i class="hand-icon hand-icon-female"></i>
+                女
+            </span>
+        </div>
+        <div class="info-nick-name info-item"><input class="js_name-set" type="text" placeholder="昵称"></div>
+        <div class="info-submit info-item js_info-submit">确定</div>
+    </div>
+    <script>
+        require('app/info/info')
+    </script>
+</body>
+</html>

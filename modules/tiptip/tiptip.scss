@@ -1,0 +1,35 @@
+@charset "utf-8";
+//
+// tiptip
+// --------------------------------------------------
+
+
+
+.tiptip{
+    position:fixed;
+    top:0;
+    width:100%;
+    box-sizing:border-box;
+    z-index:100;
+    padding:8px;
+    display:none;
+    opacity:0;
+    transform:translate3d(0,-100%,0);
+    transition:all ease .2s;
+    color:#fff;
+    font-size:14px;
+    border:1px solid transparent;
+    &.in{
+        transform:translate3d(0,0,0);
+        opacity:1;
+        display:block;
+    }
+    &.wrong{
+        background: #DD514C;
+        border-color:darken(#DD514C,10%);;
+    }
+    &.right{
+        background: #5EB95E;
+        border-color:darken(#5EB95E,10%);;
+    }
+}

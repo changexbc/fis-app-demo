@@ -1,0 +1,30 @@
+@charset "utf-8";
+//
+// common
+// --------------------------------------------------
+
+
+@import "sass/variables";
+@import "sass/reset";
+@import "sass/extends";
+@import "sass/mixins";
+@import "sass/icons";
+@import "sass/animate";
+
+
+.cards{
+	background-color: #fff;
+	border:1px solid $gray-light;
+	margin-bottom:10px;
+	&.transparent{
+		background-color: transparent;
+		border:none;
+	}
+}
+
+.loading{
+    @extend %loading;
+}
+.loading__icon{
+    @extend %loading__icon;
+}
